@@ -1,4 +1,4 @@
-#Week 3
+# Week 3
 
 Rebuild LED Circuit
 Why did my circuit not work? Wrong USB Port
@@ -28,7 +28,7 @@ boolean True/False
 Assignment First Challenge:
 Paper Prototype / Working Tinkercad oder Arduino Circuit
 
-#My First Challenge
+# My First Challenge
 
 Pseudocode:
 Function: Detect Cat / Move Toy
