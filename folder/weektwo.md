@@ -1,4 +1,4 @@
-#Make things interactive: Week 2 
+# Make things interactive: Week 2 
 
 Arduino works in parallel rows. 
 Ground = positive = green. 
