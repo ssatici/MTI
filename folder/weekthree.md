@@ -4,6 +4,7 @@ Rebuild LED Circuit
 Why did my circuit not work? Wrong USB Port
 
 Black / Ground / Negative
+
 Red / Positive
 
 Example Pseudocode:
