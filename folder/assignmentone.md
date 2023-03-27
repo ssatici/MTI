@@ -16,15 +16,14 @@ if Cat close; Toy moves
 If cat not close; Toy doesn't move
 
 ## 28/03/2023
-
-Automated Cat Toy
-
-Check if Cat is <10cm away
-
-If so Motor turns on
-
-Check if Cat >10cm Motor away
-
-If so Motor turns off
-
 Boolean: true or false
+
+FUNCTION automate cat toy
+
+INPUT cat movement
+
+IF movement detected close than 10cm
+
+	 servo motor turns on
+   
+ELSE IF turn off motor
