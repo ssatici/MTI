@@ -20,6 +20,11 @@ If cat not close; Toy doesn't move
 Automated Cat Toy
 
 Check if Cat is <10cm away
+
 If so Motor turns on
+
 Check if Cat >10cm Motor away
+
 If so Motor turns off
+
+Boolean: true or false
