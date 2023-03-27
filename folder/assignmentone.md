@@ -24,6 +24,6 @@ INPUT cat movement
 
 IF movement detected close than 10cm
 
-	 servo motor turns on
+  servo motor turns on
    
 ELSE IF turn off motor
