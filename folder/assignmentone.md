@@ -27,3 +27,6 @@ IF movement detected close than 10cm
   servo motor turns on
    
 ELSE IF turn off motor
+
+### States
+Off/Active/Running
