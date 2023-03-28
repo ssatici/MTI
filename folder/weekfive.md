@@ -28,4 +28,4 @@ Voltage Regulator: buckstep (for solar panels, rechargable batteries, stepper mo
 
 Strange / Useless Tool
 
-Kenji Kawakami, Marina Fujiwara
+Kenji Kawakami, Marina Fujiwara, Simone Giertz
