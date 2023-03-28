@@ -21,3 +21,5 @@ DC Motor ideally with Dio (?)
 More than 12VDS not permitted
 
 Find amount of current on datasheet
+
+Voltage Regulator: buckstep
