@@ -22,4 +22,10 @@ More than 12VDS not permitted
 
 Find amount of current on datasheet
 
-Voltage Regulator: buckstep
+Voltage Regulator: buckstep (for solar panels, rechargable batteries, stepper motor)
+
+## Chindogu
+
+Strange / Useless Tool
+
+Kenji Kawakami, Marina Fujiwara
