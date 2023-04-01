@@ -5,15 +5,15 @@ I'm not sure if it's working, because the led turns on and off and sometimes it 
 
 ## Pseudocode
 
-Pseudocode: Function: Detect Cat and Move Toy
+function: detect cat and move toy
 
-Input: Cat Movement (via Ultrasonic Distance Sensor) / Toy
+input: cat movement (via ultrasonic distance sensor) 
 
-Output: Toy Movement (via Servo Motor)
+output: toy movement (via servo Mmtor)
 
-if Cat close; Toy moves
+if cat closer or equal close as 20; servo motor is active
 
-If cat not close; Toy doesn't move
+If cat further than 20; servo motor is deative
 
 ## 28/03/2023
 Boolean: true or false
