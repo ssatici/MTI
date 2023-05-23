@@ -1,0 +1,26 @@
+# Pseudocode
+
+include Transmitter and Receiver
+
+Input
+Heartbeat
+Accelerometer
+Button
+
+Output
+RGB LED
+Square LED Display 8x8
+Vibration Motor
+
+Function
+Track Heartbeat; match rpm with bpm
+If Heartbeat is >= 100 bpm; rpm is HIGH
+If Heartbeat is < 100 bpm; rpm is OFF
+
+If Accelerometer is HIGH (movement); RGB is blue
+If Accelerometer is MEDIUM; RGB is green
+If Accelerometer is LOW (resting); RGB is white
+
+If Happy Button is pushed; Happy Emoji on Display
+If Sad Button is pushed; Sad Emoji on Display
+If Question Mark Button is pushed; Question Mark on Display
