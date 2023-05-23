@@ -5,18 +5,13 @@ include Transmitter and Receiver
 Input
 
 Heartbeat
-
 Accelerometer
-
 Button
-
 
 Output
 
 RGB LED
-
 Square LED Display 8x8
-
 Vibration Motor
 
 
