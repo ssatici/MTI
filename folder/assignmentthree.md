@@ -1,4 +1,4 @@
-Code 1/3: Emoji-Button and Display Code
+# Code 1/3: Emoji-Button and Display Code
 
 // MAX7219 pin configuration
 const int DATA_PIN = 12; // MOSI
@@ -149,3 +149,53 @@ void displayPattern(const byte* pattern) {
     sendMax7219(MAX7219_REG_DIGIT0 + i, pattern[i]);
   }
 }
+
+# Code 2/3: Accelerometer and RGB
+
+#include <Wire.h>
+
+const int MPU_ADDR = 0x68; // I2C address of the MPU-6050
+
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
+
+int16_t accelerometerX, accelerometerY, accelerometerZ;
+
+void setup() {
+  Wire.begin();  // Initialize I2C communication
+
+  // Wake up the MPU-6050
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x6B);  // PWR_MGMT_1 register
+  Wire.write(0);     // Wake up the MPU-6050
+  Wire.endTransmission(true);
+
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+}
+
+void loop() {
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x3B);  // Starting with register 0x3B (ACCEL_XOUT_H)
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU_ADDR, 6, true);  // Request a total of 6 registers
+
+  accelerometerX = Wire.read() << 8 | Wire.read();
+  accelerometerY = Wire.read() << 8 | Wire.read();
+  accelerometerZ = Wire.read() << 8 | Wire.read();
+
+  // Map the accelerometer values to the LED color range (0-255)
+  int red = map(accelerometerX, -16384, 16384, 0, 255);
+  int green = map(accelerometerY, -16384, 16384, 0, 255);
+  int blue = map(accelerometerZ, -16384, 16384, 0, 255);
+
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);
+
+  delay(100);  // Adjust delay time as needed
+}
+
+
